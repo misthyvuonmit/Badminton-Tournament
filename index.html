@@ -20,13 +20,18 @@
 
     <style>
         /* CSS RESET & VARIABLES */
-                :root {
-            --bg-dark-gray: #ffe0eb; /* original pink background */
-            --bg-deep-navy: #fcd5e3; /* original deep navy (pink tone) */
-            --primary-volt: #c95677; /* original pink accent */
+        :root {
+            --bg-dark-gray: #ffe0eb;
+            /* original pink background */
+            --bg-deep-navy: #fcd5e3;
+            /* original deep navy (pink tone) */
+            --primary-volt: #c95677;
+            /* original pink accent */
             --primary-volt-rgb: 201, 86, 119;
-            --primary-volt-dark: #a84260; /* darker pink for hover/active */
-            --text-light: #1a0f14; /* keep dark text for readability */
+            --primary-volt-dark: #a84260;
+            /* darker pink for hover/active */
+            --text-light: #1a0f14;
+            /* keep dark text for readability */
             --text-muted: #5e4751;
             --gold-gradient: linear-gradient(135deg, #ffe066 0%, #f5b041 100%);
             --silver-gradient: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 100%);
@@ -39,6 +44,7 @@
             --glass-shadow: 0 8px 32px 0 rgba(214, 114, 143, 0.08);
             --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -247,7 +253,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 80px; /* spacing between top spots */
+            gap: 80px;
+            /* spacing between top spots */
             max-width: 1100px;
             margin: 4rem auto 2rem auto;
             padding-bottom: 1rem;
@@ -258,7 +265,8 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            align-items: center; /* center items horizontally */
+            align-items: center;
+            /* center items horizontally */
             position: relative;
         }
 
@@ -332,7 +340,8 @@
             background: var(--primary-volt);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             border: 2px solid #fff;
-            z-index: 5; /* ensure badge stays on top */
+            z-index: 5;
+            /* ensure badge stays on top */
         }
 
         .player-name {
@@ -412,7 +421,8 @@
             pointer-events: none;
             line-height: 0.8;
             margin: 0;
-            z-index: 5; /* ensure rank text stays on top */
+            z-index: 5;
+            /* ensure rank text stays on top */
         }
 
         .podium-label {
@@ -430,7 +440,8 @@
             left: 50%;
             transform: translateX(-50%);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            z-index: 5; /* ensure label stays on top */
+            z-index: 5;
+            /* ensure label stays on top */
         }
 
         /* Individual Podium Spots Styling */
@@ -1192,7 +1203,8 @@
         <header>
             <h1>Vuon Mit</h1>
             <div class="subtitle">Badminton Tournament</div>
-            <p class="tagline">Giải đấu cầu lông Vườn Mít thường niên gồm 4 Season tranh tài, tìm ra 4 đội xuất sắc nhất tiến vào Giải All-Star.</p>
+            <p class="tagline">Giải đấu cầu lông Vườn Mít thường niên gồm 4 Season tranh tài, tìm ra 4 đội xuất sắc nhất
+                tiến vào Giải All-Star.</p>
         </header>
 
         <!-- SEASON SELECTOR -->
@@ -1304,7 +1316,8 @@
 
                 <!-- Hình ảnh Season 1 -->
                 <div class="carousel" style="text-align:center; margin-top:3rem; margin-bottom:0rem;">
-                    <img src="./hình ảnh/season1-hinh-tap-the.jpg" class="carousel-image" alt="Season 1 Image" style="width:40%; height:auto; display:inline-block; border-radius:12px;" />
+                    <img src="./hình ảnh/season1-hinh-tap-the.jpg" class="carousel-image" alt="Season 1 Image"
+                        style="width:40%; height:auto; display:inline-block; border-radius:12px;" />
                 </div>
             </div>
 
@@ -1388,7 +1401,8 @@
 
                 <!-- Hình ảnh Season 2 -->
                 <div class="carousel" style="text-align:center; margin-top:3rem; margin-bottom:0rem;">
-                    <img src="./hình ảnh/season2-tap-the.jpg" class="carousel-image" alt="Season 2 Image" style="width:40%; height:auto; display:inline-block; border-radius:12px;" />
+                    <img src="./hình ảnh/season2-tap-the.jpg" class="carousel-image" alt="Season 2 Image"
+                        style="width:40%; height:auto; display:inline-block; border-radius:12px;" />
                 </div>
 
             </div>
@@ -1428,9 +1442,12 @@
                         </div>
 
                         <!-- Registration Button -->
-                        <button class="btn-register-s3" style="background: #9ca3af; box-shadow: none; cursor: not-allowed; pointer-events: none;" disabled>
+                        <button class="btn-register-s3"
+                            style="background: #9ca3af; box-shadow: none; cursor: not-allowed; pointer-events: none;"
+                            disabled>
                             <svg viewBox="0 0 24 24">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                             </svg>
                             Đã Đủ Người Đăng Ký
                         </button>
@@ -1477,18 +1494,24 @@
             <div id="season4-panel" class="panel" role="tabpanel" aria-labelledby="tab-season4">
                 <div class="coming-soon-wrapper">
                     <div class="hero-banner-s3">
-                        <div class="status-badge-s3" style="background: rgba(156, 163, 175, 0.15); color: #6b7280; border: 1px solid rgba(156, 163, 175, 0.3);">
-                            <span class="indicator-dot" style="background: #9ca3af; box-shadow: 0 0 8px rgba(156, 163, 175, 0.6);"></span>
+                        <div class="status-badge-s3"
+                            style="background: rgba(156, 163, 175, 0.15); color: #6b7280; border: 1px solid rgba(156, 163, 175, 0.3);">
+                            <span class="indicator-dot"
+                                style="background: #9ca3af; box-shadow: 0 0 8px rgba(156, 163, 175, 0.6);"></span>
                             Dự kiến Tháng 10
                         </div>
 
                         <h2 class="title-s3">Season 4 is Coming</h2>
-                        <p class="desc-s3" style="margin-bottom: 2rem;">Giải đấu tiếp theo dự kiến sẽ diễn ra vào Tháng 10. Lịch trình chi tiết sẽ được Ban Tổ Chức cập nhật sau.</p>
+                        <p class="desc-s3" style="margin-bottom: 2rem;">Giải đấu tiếp theo dự kiến sẽ diễn ra vào Tháng
+                            10. Lịch trình chi tiết sẽ được Ban Tổ Chức cập nhật sau.</p>
 
                         <!-- Registration Button -->
-                        <button class="btn-register-s3" style="background: #9ca3af; box-shadow: none; cursor: not-allowed; pointer-events: none;" disabled>
+                        <button class="btn-register-s3"
+                            style="background: #9ca3af; box-shadow: none; cursor: not-allowed; pointer-events: none;"
+                            disabled>
                             <svg viewBox="0 0 24 24">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                             </svg>
                             Chưa Mở Đăng Ký
                         </button>
@@ -1502,7 +1525,8 @@
         <footer>
             <p>&copy; 2026 VUON MIT BADMINTON TOURNAMENT</p>
             <div class="footer-links">
-                <a href="javascript:void(0)" class="footer-link" onclick="openInfoModal('contact')">Liên hệ ban tổ chức</a>
+                <a href="javascript:void(0)" class="footer-link" onclick="openInfoModal('contact')">Liên hệ ban tổ
+                    chức</a>
             </div>
         </footer>
 
@@ -1733,21 +1757,21 @@
             event.target.reset(); // Reset form fields
         }
     </script>
-<script>
-const carousels = document.querySelectorAll('.carousel');
-carousels.forEach(carousel => {
-  const images = carousel.querySelectorAll('.carousel-image');
-  let current = 0;
-  if (images.length) {
-    images[0].classList.add('active');
-    setInterval(() => {
-      images[current].classList.remove('active');
-      current = (current + 1) % images.length;
-      images[current].classList.add('active');
-    }, 10000);
-  }
-});
-</script>
+    <script>
+        const carousels = document.querySelectorAll('.carousel');
+        carousels.forEach(carousel => {
+            const images = carousel.querySelectorAll('.carousel-image');
+            let current = 0;
+            if (images.length) {
+                images[0].classList.add('active');
+                setInterval(() => {
+                    images[current].classList.remove('active');
+                    current = (current + 1) % images.length;
+                    images[current].classList.add('active');
+                }, 10000);
+            }
+        });
+    </script>
 
 </body>
 
