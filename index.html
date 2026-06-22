@@ -792,7 +792,7 @@
         }
 
         .roadmap-title {
-            font-family: 'Outfit', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-size: 1.4rem;
             font-weight: 800;
             color: #4a3543;
@@ -1207,7 +1207,7 @@
         <header>
             <h1>Vuon Mit</h1>
             <div class="subtitle">Badminton Tournament</div>
-            <p class="tagline">Giải đấu cầu lông Vườn Mít thường niên gồm 4 Season tranh tài, tìm ra 4 đội xuất sắc nhất
+            <p class="tagline">Giải đấu cầu lông Vườn Mít thường niên gồm 4 Season tranh tài, tìm ra 16 người xuất sắc nhất
                 tiến vào Giải All-Star.</p>
         </header>
 
@@ -1414,16 +1414,102 @@
             <!-- PANEL: SEASON 3 -->
             <div id="season3-panel" class="panel" role="tabpanel" aria-labelledby="tab-season3">
 
+                <div class="podium-section">
+                    <!-- 3D Podium Container -->
+                    <div class="podium-container" style="margin: 3rem auto 2rem auto;">
+
+                        <!-- 2ND PLACE (SILVER) -->
+                        <div class="podium-spot spot-2nd">
+                            <div class="player-card">
+                                <div class="avatar-wrapper">
+                                    <div class="avatar">
+                                        <img src="hình ảnh/Mint-Nghi.jpg" alt="Avatar" class="avatar-img" onclick="openLightbox(this.src)">
+                                    </div>
+                                    <div class="badge" aria-label="Hạng 2 - Á Quân">2</div>
+                                </div>
+                                <div class="player-name">Mint và Nghi</div>
+                            </div>
+                            <div class="podium-column" aria-hidden="true">
+                                <div class="podium-rank-text">2</div>
+                                <div class="podium-label">Á Quân</div>
+                            </div>
+                        </div>
+
+                        <!-- 1ST PLACE (GOLD) -->
+                        <div class="podium-spot spot-1st">
+                            <div class="player-card">
+                                <div class="avatar-wrapper">
+                                    <div class="avatar">
+                                        <img src="hình ảnh/Phung-Echcon.jpg" alt="Avatar" class="avatar-img" onclick="openLightbox(this.src)">
+                                    </div>
+                                    <div class="badge" aria-label="Hạng 1 - Vô Địch">1</div>
+                                </div>
+                                <div class="player-name">Phụng và Ếch Con</div>
+                            </div>
+                            <div class="podium-column" aria-hidden="true">
+                                <div class="podium-rank-text">1</div>
+                                <div class="podium-label">Vô Địch</div>
+                            </div>
+                        </div>
+
+                        <!-- 3RD PLACE (BRONZE) -->
+                        <div class="podium-spot spot-3rd">
+                            <div class="player-card">
+                                <div class="avatar-wrapper">
+                                    <div class="avatar">
+                                        <img src="hình ảnh/Gin-Truonghuynh.jpg" alt="Avatar" class="avatar-img" onclick="openLightbox(this.src)">
+                                    </div>
+                                    <div class="badge" aria-label="Hạng 3 - Đồng">3</div>
+                                </div>
+                                <div class="player-name">Gin và TruongHuynh</div>
+                            </div>
+                            <div class="podium-column" aria-hidden="true">
+                                <div class="podium-rank-text">3</div>
+                                <div class="podium-label">Giải Ba</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SEASON STATS CARDS -->
+                <div class="additional-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-card-title">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 17H7V15H17V17M17 13H7V11H17V13M17 9H7V7H17V9Z" />
+                            </svg>
+                            Thông tin mùa giải 3
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Thời gian diễn ra</span>
+                            <span class="info-value">Tháng 06/2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hình ảnh Season 3 -->
+                <div class="carousel" style="text-align:center; margin-top:3rem; margin-bottom:0rem;">
+                    <img src="./hình ảnh/season3-tap-the-2.jpg" class="carousel-image" alt="Season 3 Image"
+                        style="width:40%; height:auto; display:inline-block; border-radius:12px;" />
+                </div>
+
+            </div>
+
+            <!-- PANEL: SEASON 4 -->
+            <div id="season4-panel" class="panel" role="tabpanel" aria-labelledby="tab-season4">
+
                 <div class="coming-soon-wrapper">
                     <div class="hero-banner-s3">
 
                         <div class="status-badge-s3">
                             <span class="indicator-dot"></span>
-                            Chuẩn bị khởi tranh
+                            Ngày 22 - 23/08
                         </div>
 
-
-                        <h2 class="title-s3">Season 3 is Coming</h2>
+                        <h2 class="title-s3">Season 4 is Coming</h2>
+                        <p class="desc-s3" style="margin-bottom: 2rem;">Giải đấu tiếp theo sẽ diễn ra vào ngày 22 và 23 Tháng 8. Các bạn note lại thời gian đăng ký để tránh lỡ form nhaaa</p>
 
                         <!-- Real-time Countdown Timer -->
                         <div class="countdown-container">
@@ -1446,15 +1532,13 @@
                         </div>
 
                         <!-- Registration Button -->
-                        <button class="btn-register-s3"
-                            style="background: #9ca3af; box-shadow: none; cursor: not-allowed; pointer-events: none;"
-                            disabled>
+                        <a href="https://forms.gle/iTwegSe3RQk4nbyo7" target="_blank" rel="noopener noreferrer" class="btn-register-s3">
                             <svg viewBox="0 0 24 24">
                                 <path
                                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                             </svg>
-                            Đã Đủ Người Đăng Ký
-                        </button>
+                            Đăng Ký Tham Gia
+                        </a>
 
                         <!-- ROADMAP TIMELINE -->
                         <div class="roadmap-section">
@@ -1462,28 +1546,28 @@
 
                             <div class="roadmap-grid">
 
-                                <div class="roadmap-step completed">
+                                <div class="roadmap-step active">
                                     <div class="step-circle">1</div>
                                     <div class="step-label">Mở đăng ký</div>
-                                    <div class="step-desc">Ngày 20/05</div>
+                                    <div class="step-desc">Ngày 06/07</div>
                                 </div>
 
-                                <div class="roadmap-step active">
+                                <div class="roadmap-step">
                                     <div class="step-circle">2</div>
                                     <div class="step-label">Bốc thăm chia đội</div>
-                                    <div class="step-desc">Ngày 31/05</div>
+                                    <div class="step-desc">Ngày 18/07</div>
                                 </div>
 
                                 <div class="roadmap-step">
                                     <div class="step-circle">3</div>
                                     <div class="step-label">Khai mạc</div>
-                                    <div class="step-desc">Ngày 20/06</div>
+                                    <div class="step-desc">Ngày 22/08</div>
                                 </div>
 
                                 <div class="roadmap-step">
                                     <div class="step-circle">4</div>
                                     <div class="step-label">Chung kết</div>
-                                    <div class="step-desc">Ngày 21/06</div>
+                                    <div class="step-desc">Ngày 23/08</div>
                                 </div>
 
                             </div>
@@ -1492,35 +1576,6 @@
                     </div>
                 </div>
 
-            </div>
-
-            <!-- PANEL: SEASON 4 -->
-            <div id="season4-panel" class="panel" role="tabpanel" aria-labelledby="tab-season4">
-                <div class="coming-soon-wrapper">
-                    <div class="hero-banner-s3">
-                        <div class="status-badge-s3"
-                            style="background: rgba(156, 163, 175, 0.15); color: #6b7280; border: 1px solid rgba(156, 163, 175, 0.3);">
-                            <span class="indicator-dot"
-                                style="background: #9ca3af; box-shadow: 0 0 8px rgba(156, 163, 175, 0.6);"></span>
-                            Dự kiến Tháng 10
-                        </div>
-
-                        <h2 class="title-s3">Season 4 is Coming</h2>
-                        <p class="desc-s3" style="margin-bottom: 2rem;">Giải đấu tiếp theo dự kiến sẽ diễn ra vào Tháng
-                            10. Lịch trình chi tiết sẽ được Ban Tổ Chức cập nhật sau.</p>
-
-                        <!-- Registration Button -->
-                        <button class="btn-register-s3"
-                            style="background: #9ca3af; box-shadow: none; cursor: not-allowed; pointer-events: none;"
-                            disabled>
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                            </svg>
-                            Chưa Mở Đăng Ký
-                        </button>
-                    </div>
-                </div>
             </div>
 
         </div>
@@ -1540,7 +1595,7 @@
     <div id="registerModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal-content">
             <button class="close-btn" onclick="closeModal()" aria-label="Đóng bảng đăng ký">&times;</button>
-            <h2 id="modalTitle" class="modal-title">Đăng Ký Tham Gia Mùa 3</h2>
+            <h2 id="modalTitle" class="modal-title">Đăng Ký Tham Gia Mùa 4</h2>
             <p class="modal-desc">Vui lòng điền đầy đủ các thông tin bên dưới để Ban Tổ Chức liên hệ và xếp hạt giống
                 giải đấu.</p>
 
@@ -1611,7 +1666,7 @@
             activePanel.classList.add('active');
 
             // If switching to Season 1 or 2, re-trigger podium animation by resetting animation
-            if (seasonNumber === 1 || seasonNumber === 2) {
+            if (seasonNumber === 1 || seasonNumber === 2 || seasonNumber === 3) {
                 const podiums = activePanel.querySelectorAll('.podium-column');
                 podiums.forEach(p => {
                     p.style.animation = 'none';
@@ -1622,8 +1677,8 @@
             }
         }
 
-        // Live Countdown Timer for Season 3
-        const targetDate = new Date("2026-06-20T00:00:00");
+        // Live Countdown Timer for Season 4
+        const targetDate = new Date("2026-08-22T00:00:00");
 
         function updateCountdown() {
             const now = new Date().getTime();
