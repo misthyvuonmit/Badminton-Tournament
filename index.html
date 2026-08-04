@@ -819,6 +819,26 @@
             z-index: 1;
         }
 
+        .roadmap-vertical {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            position: relative;
+        }
+
+        .roadmap-vertical::before {
+            content: '';
+            position: absolute;
+            top: 25px;
+            bottom: 25px;
+            left: 50%;
+            width: 2px;
+            background: rgba(var(--primary-volt-rgb), 0.15);
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
         .roadmap-step {
             display: flex;
             flex-direction: column;
@@ -1534,44 +1554,28 @@
                             Ngày 22 - 23/08
                         </div>
 
-                        <h2 class="title-s3">Đăng Ký Season 4</h2>
-                        <p class="desc-s3" style="margin-bottom: 2rem;">Chính thức mở cổng đăng ký Vuon Mit Badminton Tournament Season 4 diễn ra vào ngày 22 và 23 Tháng 8. Các bạn vui lòng điền form đăng ký nhé! Đừng quên đọc kỹ các quy định trước khi điền form nhaaaa</p>
-
-                        <!-- Registration Button -->
-                        <a href="https://forms.gle/iTwegSe3RQk4nbyo7" target="_blank" rel="noopener noreferrer" class="btn-register-s3">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                            </svg>
-                            Điền form đăng ký tham gia
-                        </a>
+                        <h2 class="title-s3" style="font-family: 'Inter', sans-serif;">Danh Sách Đội Season 4</h2>
+                        
+                        <!-- Hình ảnh Season 4 -->
+                        <div class="carousel" style="text-align:center; margin-top:1rem; margin-bottom:2rem;">
+                            <img src="./hình ảnh/Gemini_Generated_Image_hr6v9yhr6v9yhr6v.png" class="carousel-image" alt="Danh sách chia đội Season 4"
+                                style="width:100%; max-width:800px; height:auto; display:inline-block; border-radius:12px;" />
+                        </div>
 
                         <!-- ROADMAP TIMELINE -->
                         <div class="roadmap-section">
                             <h3 class="roadmap-title">Lộ Trình Giải Đấu</h3>
 
-                            <div class="roadmap-grid">
+                            <div class="roadmap-vertical">
 
                                 <div class="roadmap-step active">
                                     <div class="step-circle">1</div>
-                                    <div class="step-label">Mở đăng ký</div>
-                                    <div class="step-desc blink-text">Đang diễn ra</div>
-                                </div>
-
-                                <div class="roadmap-step">
-                                    <div class="step-circle">2</div>
-                                    <div class="step-label">Bốc thăm chia đội</div>
-                                    <div class="step-desc">Ngày 18/07</div>
-                                </div>
-
-                                <div class="roadmap-step">
-                                    <div class="step-circle">3</div>
                                     <div class="step-label">Khai mạc</div>
                                     <div class="step-desc">Ngày 22/08</div>
                                 </div>
 
                                 <div class="roadmap-step">
-                                    <div class="step-circle">4</div>
+                                    <div class="step-circle">2</div>
                                     <div class="step-label">Chung kết</div>
                                     <div class="step-desc">Ngày 23/08</div>
                                 </div>
